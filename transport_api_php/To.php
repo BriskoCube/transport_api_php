@@ -14,13 +14,16 @@
  * limitations under the License.
  *
  * By: Julien Quartier
- * On: 18 oct. 2018 19:58
+ * On: 18 oct. 2018 20:11
  */
 
 namespace transportApiPhp;
 
 
-class Station
+class To extends ConnectionEnd
 {
-
+    function __construct($arrival, $arrivalTimestamp, $departure, $departureTimestamp, $platform, $prognosis, $station)
+    {
+        parent::__construct($arrival, $arrivalTimestamp, $departure, $departureTimestamp, $platform, $prognosis, $station);
+    }
 }
